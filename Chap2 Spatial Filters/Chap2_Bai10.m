@@ -6,9 +6,9 @@
 %qua. Neu ket qua ko tot, de xuat cach xu ly
 % p = ti le nhieu xuat hien trong anh
 
-im = imread('600800.jpg');
+im = imread('huy.png');
 gray_im = rgb2gray(im);
-grayImgAddNoise = imnoise(gray_im, 'salt & pepper', 0.4);
+grayImgAddNoise = imnoise(gray_im, 'salt & pepper', 0.5);
 
 H_filter = (1/16*[1 2 1; 2 4 2; 1 2 1]); %Low-pass filter
 

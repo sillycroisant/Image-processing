@@ -1,6 +1,6 @@
 %[Bai 3]: them tinh nang lay patch duong tron
-function Bai3_circle_patch
-I = imread('hui.jpg');
+function Chap1_Bai3_circle_patch
+I = imread('huy.png');
 
 I = im2double(I);
 

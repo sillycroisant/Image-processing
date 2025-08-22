@@ -1,6 +1,6 @@
 clc; close; clearvars;
 
-img = imread('img.png');
+img = imread('huy.png');
 grayImg = rgb2gray(img);
 double(grayImg);
 

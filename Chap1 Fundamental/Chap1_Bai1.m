@@ -1,6 +1,6 @@
 clc; clearvars; close;
 
-img = imread('600800.jpg');
+img = imread('huy.png');
 
 im1 = img(1:2:end, 1:2:end,:);
 im2 = im1(1:2:end, 1:2:end,:);
