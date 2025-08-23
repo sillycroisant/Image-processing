@@ -1,4 +1,4 @@
-i = imread('img.png');
+i = imread('huy.png');
 g = rgb2gray(i);
 
 gaus_noise = normrnd(0,5,size(g));

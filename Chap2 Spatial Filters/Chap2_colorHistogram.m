@@ -1,4 +1,4 @@
-im = imread('hui.jpg');
+im = imread('huy.png');
 
 figure(1);
 subplot(221);

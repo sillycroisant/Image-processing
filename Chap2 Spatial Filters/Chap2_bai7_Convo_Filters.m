@@ -1,4 +1,4 @@
-i = imread('600800.jpg');
+i = imread('huy.png');
 g = rgb2gray(i);
 
 figure(1); imshow(g); title('Origin');
