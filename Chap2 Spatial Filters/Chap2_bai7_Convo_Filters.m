@@ -20,5 +20,9 @@ h13 = ones(13,13)/169;
 conv13 = conv2(g,h13,'same');
 subplot(224), imshow(uint8(conv13)), title('13x13 Average Filter');
 
-%Kich thuoc bo loc cang lon thi do ro net cua anh cang thap -> bo loc thong
-%thap co chuc nang loc tang so cao
+% The bigger the size of filters get, the more blurring the img get
+
+% >> This is low-pass filter, 
+% only allow low-frequency information get through
+% and keep out high-frequency one.
+

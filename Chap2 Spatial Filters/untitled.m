@@ -1,4 +1,3 @@
-
 clc; close; clearvars
 
 img = imread('huy.png');

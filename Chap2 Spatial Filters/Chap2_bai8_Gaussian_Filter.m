@@ -1,16 +1,25 @@
 i = imread('huy.png');
-g = rgb2gray(i);
+g = im2gray(i);
 
-gaus_noise = normrnd(0,5,size(g));
-h = uint8([1 2 1; 2 4 2; 1 2 1]/16);
+gaus_noise = normrnd(0,10,size(g)); % change here for demo
+
+h = ([1 2 1; 2 4 2; 1 2 1])/20; % change here
 i1 = g + uint8(gaus_noise);
 
-subplot(121), imshow(g), title('Origin');
+figure;
+subplot(221), imshow(g), title('Origin');
 
-out_a = conv2(i1,h,'same');
-subplot(122), imshow(uint8(out_a));
-title('Image through H filter');
+out_a = uint8(conv2(i1,h,'same'));
 
-figure(1);
-imshow(i1);
+subplot(222); imshow(i1); title('Noised img');
 
+subplot(223); imshow((out_a)); title('Filtered img');
+
+subplot(224); imshowpair(out_a, g, 'diff'); title('Filtered area')
+
+sum(dif(:));
+
+% comment:
+% gaussian filter helps remove some noise
+% but also in the meantime also smooth out the edges of object in the img
+% such as the area between objects and background in 4th img
